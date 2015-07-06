@@ -1,6 +1,65 @@
 @import "normalize";
 @import "mixins";
 
-body {
-	background: blue;
+$lato: 'Lato', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+a {
+	text-decoration: none;
+	color: white;
+	@include transition;
+	border-bottom: 1px solid #C50720;
+	&:hover {
+		border-bottom: 1px solid white;
+	}
+}
+.home {
+	width: 100%;
+	background: url(../assets/background1.jpg);
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	.content {
+		@include flexboxColumn;
+		background: rgba(255, 255, 255, 0.6);
+		margin: 0 auto;
+		position: absolute;
+		top: 75px;
+		left: 75px;
+		width: 50%;
+		float: left;
+		.contentUpper {
+			padding: 25px;
+		}
+		.contentLower {
+			background: #C50720;
+			padding: 25px;
+		}
+	}
+	.footer {
+		float: right;
+		position: absolute;
+		top: 75px;
+		right: 0px;
+		// width: 10%;
+		padding: 10px;
+		background: #C50720;
+
+	}
+}
+h1 {
+	margin: 0;
+	font-family: $montserrat;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+p {
+	 margin: 0;
+	 font-size: 14px;
+	 color: white;
+	 font-family: $lato;
+	 font-weight: 100;
 }
