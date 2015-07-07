@@ -8,32 +8,50 @@ a {
 	text-decoration: none;
 	color: white;
 	@include transition;
+	// border-bottom: 1px solid #0a4c72;
 	border-bottom: 1px solid #C50720;
 	&:hover {
 		border-bottom: 1px solid white;
 	}
 }
+
+.background1 {
+	background: url(../assets/background.jpg);
+	// @include transition;
+}
+
+.background2 {
+	background: url(../assets/background0.jpg);
+	// @include transition;
+}
 .home {
 	width: 100%;
-	background: url(../assets/background1.jpg);
 	background-size: cover;
 	height: 100vh;
 	position: relative;
 	.content {
 		@include flexboxColumn;
-		background: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, 0.7);
 		margin: 0 auto;
 		position: absolute;
 		top: 75px;
 		left: 75px;
-		width: 50%;
+		width: 45%;
 		float: left;
 		.contentUpper {
 			padding: 25px;
+			span {
+				color: #C50720;
+			}
 		}
 		.contentLower {
 			background: #C50720;
 			padding: 25px;
+			font-family: $lato;
+			text-align: center;
+			span {
+				padding-left: 10px;
+			}
 		}
 	}
 	.footer {
@@ -42,15 +60,36 @@ a {
 		top: 75px;
 		right: 0px;
 		// width: 10%;
-		padding: 10px;
+		// padding: 10px;
 		background: #C50720;
+		// background: #0a4c72;
+		.footerTop {
+			padding: 10px;
+			.copy {
+				padding-top: 2px;
+			}
+		}
+		.background {
+			background: darken(#C50720, 10%);
+			padding: 10px;
+			a {
+				border-bottom: 1px solid darken(#C50720, 10%);
+				font-size: 14px;
+				color: white;
+				font-family: $lato;
+				font-weight: 100;
+				&:hover {
+					border-bottom: 1px solid white;
+				}
+			}
+		}
 
 	}
 }
 h1 {
 	margin: 0;
 	font-family: $montserrat;
-	font-size: 55px;
+	font-size: 50px;
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 1px;

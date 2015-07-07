@@ -3,24 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Luke's Star Wars Countdown is ON!</title>
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,400,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
-<main class="home">
+<main class="home background1">
 	<section class="content">
 		<article class="contentUpper">
-			<h1>100 more sleeps until Luke gets to watch Star Wars Episode 7!</h1>
+			<h1><span id="sleeps"></span> more sleeps until Luke gets to watch Star Wars Episode 7!</h1>
 		</article>
-		<article class="contentLower">
-			This is the countdown.
+		<article class="contentLower" id="clock">
+			
 		</article>
 	</section>
 	<section class="footer">
-		<p>Made for Luke</p> <p>By <a href="http://www.shawnebeyer.com">Shawn</a></p>
+		<div class="footerTop">
+			<p>Made for Luke</p> 
+			<p>By <a href="http://www.shawnebeyer.com">Shawn</a></p>
+			<p class="copy">&copy 2015</p>
+		</div>
+		<div class="background">
+			<a href="#" class="backgroundImage">Change Background</a>
+		</div>
 	</section>
 </main>
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- <script src="js/jquery-ui.js"></script> -->
+<script src="js/jquery.countdown.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
